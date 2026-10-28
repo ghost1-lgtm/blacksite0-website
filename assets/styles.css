@@ -179,3 +179,15 @@ section:focus,main:focus{outline:none}
 .enquiry-privacy a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
 .enquiry-privacy p{font-size:12px}
 @media(max-width:540px){.google-enquiry{padding:16px 10px}.google-form-frame iframe{height:850px}}
+
+/* Approved logo asset: isolated sizing overrides preserve existing font presets and radar motion. */
+.brand.brand-approved{min-width:0;flex:0 0 auto;gap:0}
+.brand-logo{display:block;width:220px;height:auto;max-width:100%;mix-blend-mode:screen}
+.hud .radar-core.radar-approved{width:100%;height:100%;padding:0;font-size:0;line-height:0;letter-spacing:0;mix-blend-mode:screen}
+.radar-logo{display:block;width:100%;height:100%;object-fit:contain}
+.radar:has(.radar-approved) .radar-sweep{z-index:2;pointer-events:none}
+@media(max-width:540px){.brand-logo{width:196px}}
+
+/* Footer reuses the approved original artwork, including its original tagline. */
+.footer-brand{display:inline-block;max-width:100%}
+.footer-brand-logo{display:block;width:300px;max-width:100%;height:auto;mix-blend-mode:screen}
