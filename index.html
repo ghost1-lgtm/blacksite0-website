@@ -21,6 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=VT323&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/styles.css" />
+  <link rel="stylesheet" href="./assets/theme-code.css" />
   <noscript><style>
     .type-lab-buttons{display:none}.hamburger{display:none}header{position:static}
     @media(max-width:1000px){nav{height:auto;min-height:80px;flex-wrap:wrap;padding-top:16px;padding-bottom:16px}.navlinks{display:flex;position:static;width:100%;max-height:none;padding:12px 0;border:0;background:transparent;flex-direction:row;flex-wrap:wrap}}
@@ -47,6 +48,10 @@
   </header>
   <main id="main-content" tabindex="-1">
     <section class="hero" id="home">
+      <div class="ps-atmosphere" aria-hidden="true" hidden>
+        <div class="ps-fragment"><span class="ps-comment">// DIGITAL OPERATIONS</span><br><span class="ps-variable">$Company</span> = <span class="ps-string">"BLACKSITE 0"</span><br><span class="ps-command">Get-DigitalOperations</span> <span class="ps-keyword">-Region</span> <span class="ps-string">"South Goa"</span></div>
+        <i></i><i></i><i></i><i></i>
+      </div>
       <div class="wrap hero-grid">
         <div>
           <div class="eyebrow mono"><span class="dots"></span> DIVISION 00 &nbsp; / &nbsp; DIGITAL OPERATIONS &nbsp; / &nbsp; SYSTEM ACTIVE</div>
@@ -126,6 +131,19 @@
     </div></section>
   </main>
   <footer><div class="wrap"><div class="footer-flex"><div class="footer-left"><a class="footer-brand" href="#home" aria-label="Blacksite Zero homepage"><img class="footer-brand-logo" src="./assets/blacksite0-footer-600.webp" width="600" height="164" alt="BLACKSITE 0 — Digital Operations. Design // Develop // Deploy." loading="lazy" decoding="async" /></a><p>Digital engineering & technology solutions.</p></div><div class="footer-links"><a href="#capabilities">Capabilities</a><a href="#pricing">Packages</a><a href="#process">Process</a><a href="#contact">Contact</a><a href="mailto:ghost1@blacksite0.com">Email us</a></div></div><div class="footnote">© <span id="year">2026</span> BLACKSITE 0 &nbsp; // &nbsp; DESIGN. DEVELOP. DEPLOY. &nbsp; // &nbsp; BUILD 07</div></div></footer>
+  <details class="ps-terminal" id="psTerminal" hidden>
+    <summary><span><span class="ps-command">PS &gt;</span> COMMAND PALETTE</span><span class="ps-terminal-toggle" aria-hidden="true">⌃</span></summary>
+    <div class="ps-terminal-body">
+      <p class="ps-terminal-caption" id="psScope">SIMULATED INTERFACE // WEBSITE NAVIGATION ONLY</p>
+      <div class="ps-terminal-output" id="psOutput" role="log" aria-live="polite" aria-relevant="additions" tabindex="0" aria-label="Command results"><p>BLACKSITE 0 — Digital Operations<br>Type <span class="ps-command">help</span> for available commands.</p></div>
+      <form id="psCommandForm" action="#home">
+        <label for="psCommand"><span class="ps-command">PS</span> C:\BLACKSITE0&gt;</label>
+        <div class="ps-input-row"><input id="psCommand" type="text" maxlength="80" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="go" placeholder="help" aria-describedby="psScope" /><button type="submit" aria-label="Run navigation command">↵</button></div>
+      </form>
+    </div>
+  </details>
+  <div class="ps-boot" id="psBoot" role="status" aria-live="polite" aria-atomic="true" hidden><span class="ps-comment">POWERSHELL // BLACKSITE 0</span><span>INITIALIZING BLACKSITE 0...</span><span>LOADING DIGITAL OPERATIONS...</span><span>GRAPHICS ENGINE ONLINE</span><strong>SYSTEM READY <span aria-hidden="true">█</span></strong></div>
   <script src="./assets/site.js" defer></script>
+  <script src="./assets/theme-code.js" defer></script>
 </body>
 </html>
