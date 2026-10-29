@@ -1,0 +1,111 @@
+/* Theme 03 only. The approved shared styles and logo files remain unchanged. */
+.ps-terminal[hidden],.ps-boot[hidden],.ps-atmosphere[hidden]{display:none}
+body[data-font-mode="developer"]{
+  --bg:#050505;--bg2:#0d1117;--panel:#0d1117;--panel2:#101720;--line:#30363d;
+  --ink:#f0f0f0;--dim:#b0bac6;--muted:#7d8590;--accent:#00d9ff;--accent2:#79c0ff;--amber:#ffd166;--r:3px;
+  --ps-keyword:#c792ea;--ps-string:#e6db74;--ps-success:#39ff88;--ps-error:#ff5370;
+  background:#050505;color:#f0f0f0;
+}
+body[data-font-mode="developer"]::before{opacity:.035;background-image:repeating-linear-gradient(transparent 0 3px,#79c0ff33 4px)}
+body[data-font-mode="developer"] :is(header,footer){background:#050505ed;border-color:var(--line)}
+body[data-font-mode="developer"] .type-lab{background:#0d1117;border-color:var(--line)}
+body[data-font-mode="developer"] :is(.type-lab-heading,.type-lab-button){color:#b0bac6}
+body[data-font-mode="developer"] :is(.type-lab-button,.hamburger){background:#0d1117;border-color:var(--line)}
+body[data-font-mode="developer"] .type-lab-button[aria-pressed="true"]{background:#00d9ff;color:#050505;border-color:#00d9ff;box-shadow:inset 0 -3px #79c0ff}
+body[data-font-mode="developer"] .hero::before{background:radial-gradient(ellipse at 77% 46%,#00d9ff0e,transparent 49%),linear-gradient(110deg,#050505 20%,#0d1117 85%,#050505)}
+body[data-font-mode="developer"] .hero::after{inset:-48px;opacity:.21;background-image:linear-gradient(#79c0ff16 1px,transparent 1px),linear-gradient(90deg,#79c0ff16 1px,transparent 1px);animation:ps-grid-drift 160s linear infinite}
+body[data-font-mode="developer"] .hero .eyebrow::before{content:"PS C:\\BLACKSITE0> Initialize-DigitalOperations";display:block;color:#79c0ff;font-size:10px;letter-spacing:.025em;line-height:1.8;margin-bottom:18px}
+body[data-font-mode="developer"] .hero h1{color:#00d9ff;letter-spacing:-.065em}
+body[data-font-mode="developer"] .hero h1 .outline{color:#c792ea;-webkit-text-stroke:0;text-shadow:0 0 36px #c792ea12}
+body[data-font-mode="developer"] .hero h1 .zero{color:#39ff88}
+body[data-font-mode="developer"] .hero p{color:#b0bac6}
+body[data-font-mode="developer"] .hero .eyebrow{color:#7d8590}
+body[data-font-mode="developer"] .dots{background:#39ff88;box-shadow:0 0 12px #39ff8866}
+body[data-font-mode="developer"] .hero-index{color:#7d8590}
+body[data-font-mode="developer"] .hero-index b{color:#c792ea}
+body[data-font-mode="developer"] .navlinks a{color:#b0bac6}
+body[data-font-mode="developer"] .navlinks a:hover{color:#00d9ff}
+body[data-font-mode="developer"] .btn-primary{background:#00d9ff;color:#050505;border-color:#00d9ff;box-shadow:0 0 24px #00d9ff10}
+body[data-font-mode="developer"] .btn-primary:hover{background:#79c0ff}
+body[data-font-mode="developer"] .btn-secondary{background:#0d1117;border-color:#30363d;color:#f0f0f0}
+body[data-font-mode="developer"] :is(.btn,.nav-cta,.card,.price-card,.usecase-item,.contact-form,.ps-terminal){transition:border-color .25s,box-shadow .25s,background .25s}
+body[data-font-mode="developer"] :is(.btn,.nav-cta,.card,.price-card,.usecase-item,.contact-form,.ps-terminal):is(:hover,:focus-within){border-color:#00d9ff;box-shadow:0 0 0 1px #00d9ff22,0 8px 28px #00d9ff0a}
+body[data-font-mode="developer"] .hud::before{border-color:#79c0ff22}
+body[data-font-mode="developer"] .hud::after{border-color:#00d9ff30}
+body[data-font-mode="developer"] .radar{border-color:#39ff8855;animation:ps-radar-glow 7s ease-in-out infinite}
+body[data-font-mode="developer"] .radar-sweep{background:conic-gradient(from 0deg,transparent 0deg,transparent 290deg,#00d9ff29 355deg,transparent 360deg)}
+body[data-font-mode="developer"] .hud-tag{background:#0d1117ed;border-color:#30363d;color:#7d8590}
+body[data-font-mode="developer"] .hud-tag span{color:#39ff88}
+body[data-font-mode="developer"] .hud-corner{color:#79c0ff}
+body[data-font-mode="developer"] :is(.ticker,.strip,.process,.pricing,.faq,.contact){background:#080b10;border-color:#30363d}
+body[data-font-mode="developer"] .ticker{background:#0d1117}
+body[data-font-mode="developer"] .ticker span{color:#7d8590}
+body[data-font-mode="developer"] .ticker em{color:#39ff88}
+body[data-font-mode="developer"] :is(.card,.price-card,.usecase-main,.usecase-item,.google-enquiry,.metric){background:#0d1117;border-color:#30363d;border-radius:3px}
+body[data-font-mode="developer"] :is(.card,.metric){box-shadow:inset 0 1px #79c0ff0a}
+body[data-font-mode="developer"] .card::after{background:radial-gradient(circle,#00d9ff0d,transparent 66%)}
+body[data-font-mode="developer"] .service-symbol{background:#00d9ff09;border-color:#00d9ff40;color:#00d9ff}
+body[data-font-mode="developer"] :is(.service-num,.tier,.step b,.usecase-item .mono){color:#c792ea}
+body[data-font-mode="developer"] :is(.card p,.step p,.contact p,.faq-a,.contact-info,.benefits li){color:#b0bac6}
+body[data-font-mode="developer"] :is(.card-footer,.metric-label-top,.footer-left p,.footnote,.price-note){color:#7d8590}
+body[data-font-mode="developer"] .metric-value{color:#79c0ff;text-shadow:0 0 28px #79c0ff0c}
+body[data-font-mode="developer"] .metrics{background:radial-gradient(ellipse at 73% 15%,#00d9ff06,transparent 43%),#050505;border-color:#30363d}
+body[data-font-mode="developer"] .metric-title{color:#f0f0f0}
+body[data-font-mode="developer"] .signal{background:#39ff88;box-shadow:0 0 8px #39ff8844}
+body[data-font-mode="developer"] .metrics-heading>p{color:#ffd166}
+body[data-font-mode="developer"] .badge{background:#c792ea;color:#050505}
+body[data-font-mode="developer"] .price-card.featured{border-color:#00d9ff;background:linear-gradient(140deg,#101d28,#0d1117);box-shadow:0 0 35px #00d9ff07}
+body[data-font-mode="developer"] :is(.benefits,.faq-items,.faq-item,.step,.footnote){border-color:#30363d}
+body[data-font-mode="developer"] .faq-q{color:#f0f0f0}
+body[data-font-mode="developer"] .enquiry-privacy{color:#b0bac6}
+body[data-font-mode="developer"] .google-form-frame{border-color:#30363d}
+body[data-font-mode="developer"] .footer-links a{color:#79c0ff}
+body[data-font-mode="developer"] .usecase-main::after{color:#79c0ff08}
+/* Reuse existing technical lines and overlays; no logo filtering or replacement. */
+body[data-font-mode="developer"] .strip{position:relative;overflow:hidden}
+body[data-font-mode="developer"] .strip::before{content:"";position:absolute;top:0;left:-25%;width:25%;height:1px;background:linear-gradient(90deg,transparent,#00d9ff,#39ff88,transparent);animation:ps-line-travel 18s ease-in-out infinite;pointer-events:none}
+body[data-font-mode="developer"] .ps-atmosphere{display:block;position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none;user-select:none}
+body[data-font-mode="developer"] .ps-fragment{position:absolute;right:5%;top:8%;font:10px/1.9 var(--font-code);opacity:.24;animation:ps-code-fade 24s ease-in-out infinite;white-space:pre-wrap}
+body[data-font-mode="developer"] .ps-atmosphere i{position:absolute;width:2px;height:2px;background:#79c0ff;box-shadow:0 0 8px #00d9ff66;left:64%;top:77%;opacity:0;animation:ps-particle-drift 32s linear infinite}
+body[data-font-mode="developer"] .ps-atmosphere i:nth-of-type(2){left:91%;top:83%;animation-delay:-8s;background:#39ff88}
+body[data-font-mode="developer"] .ps-atmosphere i:nth-of-type(3){left:42%;top:45%;animation-delay:-16s}
+body[data-font-mode="developer"] .ps-atmosphere i:nth-of-type(4){left:78%;top:39%;animation-delay:-24s}
+body[data-font-mode="developer"] .ps-command{color:#00d9ff}
+body[data-font-mode="developer"] .ps-variable{color:#79c0ff}
+body[data-font-mode="developer"] .ps-keyword{color:#c792ea}
+body[data-font-mode="developer"] .ps-string{color:#e6db74}
+body[data-font-mode="developer"] .ps-comment{color:#7d8590}
+body[data-font-mode="developer"] .ps-terminal{position:fixed;right:20px;bottom:18px;z-index:30;width:min(390px,calc(100% - 32px));background:#0d1117f7;border:1px solid #30363d;border-radius:3px;box-shadow:0 12px 42px #0009;font:11px/1.7 var(--font-code);color:#f0f0f0;max-height:calc(100dvh - 110px);overflow:auto}
+body[data-font-mode="developer"] .ps-terminal summary{list-style:none;cursor:pointer;min-height:44px;padding:11px 15px;display:flex;align-items:center;justify-content:space-between;gap:10px;color:#b0bac6;font-weight:600;letter-spacing:.04em}
+body[data-font-mode="developer"] .ps-terminal summary::-webkit-details-marker{display:none}
+body[data-font-mode="developer"] .ps-terminal[open] summary{border-bottom:1px solid #30363d}
+body[data-font-mode="developer"] .ps-terminal[open] .ps-terminal-toggle{transform:rotate(180deg)}
+body[data-font-mode="developer"] .ps-terminal-body{padding:0 15px 15px}
+body[data-font-mode="developer"] .ps-terminal-caption{font-size:8px;letter-spacing:.06em;color:#7d8590;margin:12px 0}
+body[data-font-mode="developer"] .ps-terminal-output{height:122px;overflow:auto;overflow-wrap:anywhere;overscroll-behavior:contain;padding-right:8px;scrollbar-width:thin;scrollbar-color:#30363d #0d1117}
+body[data-font-mode="developer"] .ps-terminal-output p{margin:0 0 9px;white-space:pre-wrap}
+body[data-font-mode="developer"] .ps-terminal-output .ps-error{color:#ff5370}
+body[data-font-mode="developer"] .ps-terminal-output .ps-success{color:#39ff88}
+body[data-font-mode="developer"] #psCommandForm{margin-top:12px;border-top:1px solid #30363d;padding-top:10px}
+body[data-font-mode="developer"] #psCommandForm label{display:block;color:#79c0ff;margin-bottom:5px}
+body[data-font-mode="developer"] .ps-input-row{display:flex;gap:8px}
+body[data-font-mode="developer"] #psCommand{width:100%;min-width:0;min-height:44px;padding:8px 10px;background:#050505;color:#e6db74;border:1px solid #30363d;border-radius:2px;font:14px var(--font-code)}
+body[data-font-mode="developer"] .ps-input-row button{min-width:44px;min-height:44px;background:#00d9ff0d;color:#00d9ff;border:1px solid #30363d;border-radius:2px}
+body[data-font-mode="developer"] .ps-boot{position:fixed;right:20px;bottom:74px;z-index:31;width:min(390px,calc(100% - 32px));padding:16px 19px;border:1px solid #00d9ff66;border-left:3px solid #00d9ff;background:#0d1117f7;color:#79c0ff;font:10px/1.9 var(--font-code);box-shadow:0 8px 45px #0009;pointer-events:none;animation:ps-boot-in .2s ease-out}
+body[data-font-mode="developer"] .ps-boot>span,body[data-font-mode="developer"] .ps-boot>strong{display:block;animation:ps-boot-line .2s ease-out both}
+body[data-font-mode="developer"] .ps-boot>span:nth-child(3){animation-delay:.25s}
+body[data-font-mode="developer"] .ps-boot>span:nth-child(4){animation-delay:.5s}
+body[data-font-mode="developer"] .ps-boot>strong{color:#39ff88;animation-delay:.8s}
+body[data-font-mode="developer"] .ps-boot strong span{animation:ps-cursor .8s steps(2,end) infinite}
+body[data-font-mode="developer"].ps-paused *,body[data-font-mode="developer"].ps-paused *::before,body[data-font-mode="developer"].ps-paused *::after{animation-play-state:paused!important}
+@keyframes ps-grid-drift{to{transform:translate3d(48px,24px,0)}}
+@keyframes ps-radar-glow{0%,100%{box-shadow:0 0 20px #39ff8808}50%{box-shadow:0 0 40px #39ff8820}}
+@keyframes ps-line-travel{0%,65%{transform:translateX(0);opacity:0}70%{opacity:.7}100%{transform:translateX(500%);opacity:0}}
+@keyframes ps-code-fade{0%,100%{opacity:.1;transform:translateY(0)}50%{opacity:.26;transform:translateY(-8px)}}
+@keyframes ps-particle-drift{0%,100%{opacity:0;transform:translateY(0)}20%,70%{opacity:.5}95%{opacity:0;transform:translateY(-70px)}}
+@keyframes ps-boot-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@keyframes ps-boot-line{from{opacity:0}to{opacity:1}}
+@keyframes ps-cursor{50%{opacity:0}}
+@media(max-width:1000px){body[data-font-mode="developer"] .navlinks{background:#0d1117;border-color:#30363d}}
+@media(max-width:540px){body[data-font-mode="developer"] .ps-fragment{font-size:8px;right:5%;top:65%}body[data-font-mode="developer"] .ps-atmosphere i:nth-of-type(n+3){display:none}body[data-font-mode="developer"] .ps-terminal,body[data-font-mode="developer"] .ps-boot{right:12px;bottom:12px;width:calc(100% - 24px)}body[data-font-mode="developer"] .ps-boot{bottom:66px}body[data-font-mode="developer"] #psCommand{font-size:16px}body[data-font-mode="developer"] .hero .eyebrow::before{font-size:9px;overflow-wrap:anywhere}}
+@media(prefers-reduced-motion:reduce){body[data-font-mode="developer"] *,body[data-font-mode="developer"] *::before,body[data-font-mode="developer"] *::after{animation:none!important;transition:none!important}body[data-font-mode="developer"] .ps-atmosphere i{display:none}}
