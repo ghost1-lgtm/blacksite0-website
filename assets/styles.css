@@ -191,3 +191,26 @@ section:focus,main:focus{outline:none}
 /* Footer reuses the approved original artwork, including its original tagline. */
 .footer-brand{display:inline-block;max-width:100%}
 .footer-brand-logo{display:block;width:300px;max-width:100%;height:auto;mix-blend-mode:screen}
+
+/* Readability refinements: preserve the approved layout, graphics and display fonts. */
+.hero p,.section-intro,.card p,.step p,.price-card .explain,.benefits li,.strip-content p,.usecase-main p,.usecase-item p,.faq-a,.contact p,.contact-info{font-size:16px;line-height:1.7}
+.enquiry-privacy p,.google-enquiry .enquiry-intro{font-size:16px;line-height:1.7}
+.hero-index,.eyebrow,.ticker span{font-size:12px;line-height:1.65}
+.service-num,.card-footer,.step b,.tier,.usecase-item .mono,.metric-label-top,.metric-title,.contact-code{font-size:12px;line-height:1.6}
+.badge,.price-note,.footer-links a,.footer-left p,.footnote,.form-hint,.enquiry-privacy{font-size:13px;line-height:1.65}
+.faq-q{font-size:17px;line-height:1.6}
+.metrics-heading{align-items:flex-start}
+.metrics-heading .metrics-caption{font-size:13px;line-height:1.6;letter-spacing:.04em;color:var(--muted);margin:14px 0 0;max-width:none}
+.card,.price-card,.step,.usecase-item,.section-intro,.hero-grid>div,.metrics-heading>div{min-width:0}
+.hero-index{gap:18px 28px}
+.ticker-inner{height:auto;min-height:52px;flex-wrap:wrap;justify-content:flex-start;gap:10px 22px;padding-top:12px;padding-bottom:12px;overflow:visible}
+.ticker span{white-space:normal}
+@media(max-width:1000px){.ticker-inner span:nth-last-child(-n+2){display:inline}}
+@media(max-width:720px){
+  .hero p,.section-intro,.card p,.step p,.price-card .explain,.benefits li,.strip-content p,.usecase-main p,.usecase-item p,.faq-a,.contact p,.contact-info,.enquiry-privacy p,.google-enquiry .enquiry-intro{font-size:15px;line-height:1.7}
+  .eyebrow{letter-spacing:.10em}
+  .metric-title{font-size:12px;letter-spacing:.025em;overflow-wrap:normal}
+  .metrics-heading .metrics-caption{font-size:12px}
+  .hero-index{gap:13px 20px}
+  .ticker-inner{gap:9px 16px}
+}
