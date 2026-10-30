@@ -3,14 +3,14 @@
   document.getElementById('year').textContent = new Date().getFullYear();
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-  // Retain the three approved presets and the existing saved preference key.
+  // Retain all three presets; every fresh page starts in Code Editor.
   const fontButtons = [...document.querySelectorAll('[data-font-choice]')];
   const optionalFonts = {
     hacker: 'Courier+Prime:wght@400;700',
     developer: 'JetBrains+Mono:wght@400;500;600;700;800'
   };
   function selectFont(mode) {
-    if (!['terminal', 'hacker', 'developer'].includes(mode)) mode = 'terminal';
+    if (!['terminal', 'hacker', 'developer'].includes(mode)) mode = 'developer';
     if (optionalFonts[mode] && !document.getElementById(`font-${mode}`)) {
       const link = document.createElement('link');
       link.id = `font-${mode}`;
@@ -26,8 +26,9 @@
     button.addEventListener('click', () => selectFont(button.dataset.fontChoice));
     button.disabled = false;
   });
-  try { selectFont(localStorage.getItem('blacksite0-preview-font-mode') || 'terminal'); }
-  catch { selectFont('terminal'); }
+  // Legacy saved choices cannot override the initial, server-rendered default.
+  // Manual switching remains available during the current visit.
+  selectFont('developer');
 
   const menu = document.getElementById('menuToggle');
   const links = document.getElementById('navlinks');
